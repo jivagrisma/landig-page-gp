@@ -170,6 +170,40 @@ body {
     }
 }
 
+/* Company logos section */
+.company-logos {
+    background-color: #000000;
+    padding: 2rem 0;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.company-logo {
+    width: 120px;
+    height: auto;
+    margin: 1rem;
+    filter: brightness(0) invert(1); /* This makes the logos white */
+}
+
+/* Responsive design for company logos */
+@media screen and (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+    }
+
+    .company-logo {
+        width: 100px;
+        margin: 1rem 0;
+    }
+}
+
 /* Focus section styles */
 .focus-section {
     background-color: #4B0082; /* Dark purple background */
