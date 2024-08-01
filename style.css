@@ -170,6 +170,145 @@ body {
     }
 }
 
+/* Improve Response Times Section */
+.improve-response-times {
+    background-color: #4B0082;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.improve-response-times::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: url('wave-pattern.svg') repeat-x bottom;
+    opacity: 0.1;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.yellow-text {
+    color: #FFD700;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.section {
+    flex-basis: 48%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+}
+
+.section h3 {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.section-content {
+    position: relative;
+}
+
+.section-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.featured-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(75, 0, 130, 0.8);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.small-text {
+    font-size: 0.9rem;
+}
+
+.large-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.learn-more-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4B0082;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #6A5ACD;
+}
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 1.8rem;
+    }
+
+    .sections-container {
+        flex-direction: column;
+    }
+
+    .section {
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .featured-box {
+        position: static;
+        margin-top: 1rem;
+    }
+
+    .learn-more-btn {
+        position: static;
+        display: block;
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
 /* Company logos section */
 .company-logos {
     background-color: #000000;
